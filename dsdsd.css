@@ -1,0 +1,429 @@
+.fon{
+   width: 100%;
+   height: 4000px;
+   background-color: white;
+   text-align: center;
+   
+}
+.chapka{
+   width: 80%;
+   height: 3000px;
+   background-color: white;
+   margin: 20px auto;
+
+
+}
+.logo{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+}
+.logo ul{
+   display: flex;align-items: center;
+}
+.logo li{
+   
+   font-family: Bahnschrift SemiBold SemiConden;
+   font-size: 15px;
+   vertical-align: middle;
+   list-style-type: none;
+   margin: 20px;
+   
+}
+.logo a{
+   text-decoration:none;
+   color: black;
+
+}
+.info{
+
+   width: 100%;
+   height: 200px;
+   background: white;
+   justify-content: center;
+   display: block;
+   align-items: center;
+}
+.Chanel{
+   
+   position:  absolute; bottom: 692PX;left:550px;
+   
+   display: inline-block;
+
+
+}
+.Lanvin{
+   
+   margin: 20px;
+   
+   display: inline-block;
+
+}
+.Gaban{
+   
+   margin: 20px;
+   
+   display: inline-block;
+
+}
+.Gucci{
+   
+   margin: 20px;
+   
+   display: inline-block;
+
+}
+.bvlgari{
+   
+   margin: 20px;
+   display: inline-block;
+
+}
+.dodik{
+   text-align: center;
+   font-size: 25px;
+   font-family: Times New Roman;
+   margin: 20px;
+}
+.dodiki{
+   
+   font-size: 25px;
+   font-family:Times New Roman;
+   padding: 50px;
+   display: inline-block;
+   
+}
+.dodikii{
+   
+   font-size: 25px;
+   font-family:Times New Roman;
+   padding: 50px;
+   display:inline-block;
+   
+
+}
+.dodikiii{
+   
+   font-size: 25px;
+   font-family:Times New Roman;
+   padding: 50px;
+   display:inline-block;
+   
+
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+.qwq{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+
+}
+.qwq1{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   
+}
+.qwq2{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+
+   
+}
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+  display: flex;
+  margin-left: 50px;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+/* Размещаем скидку на товар относительно изображения */
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ff6633;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+}
+
+.card__price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 19px;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card__price--discount::before {
+  content: "Со скидкой";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__price--common {
+  font-weight: 400;
+  font-size: 17px;
+  color: #606060;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.card__price--common::before {
+  content: "Обычная";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card__title:hover {
+  color: #ff6633;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.infomagazine{
+   margin-top: 40px;
+   width: 100%;
+   height: 300px;
+   border-radius: 4px;
+   
+
+}
+.imagedux{
+   justify-content: center;
+   border-radius: 4px;
+   
+}
+.textt{
+   margin-top: -450px;
+   font-size: 30px;
+   font-family: Arial;
+   display: flex;
+   justify-content: center;
+}
+.Nadej{
+   margin-top: 50px;
+   margin-left: 300px;
+   font-size: 19px;
+   font-family: Arial;
+   display: flex;
+   justify-content: left;
+}
+
+.Nadej2{
+   margin-top:-220px;
+   margin-right:     300px;
+   font-size: 19px;
+   font-family: Arial;
+   display: flex;
+   justify-content:right;
+}
+.textik{
+   text-align: center;
+   margin-top: 300px;
+   font-size: 30px;
+   font-family: arial;
+}
+
+.grafik{
+   margin: -420px;
+   margin-left: 150px;
+   border-radius: 30px;
+}
+.lower{
+   margin: 10px;
+   margin-left: 300px;
+   
+}
+.map{
+  justify-content:  center; 
+}
